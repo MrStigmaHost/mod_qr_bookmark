@@ -1,0 +1,52 @@
+<?xml version="1.1" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site">
+    <name>QR Bookmark</name>
+    <author>StigmaHost</author>
+    <creationDate>September 2012</creationDate>
+    <copyright>Copyright (C) 2012 Xtnd.it L.T.D., All rights reserved.</copyright>
+    <license>GNU General Public License</license>
+    <authorEmail>info@stigmahost.com</authorEmail>
+    <authorUrl>http://www.stigmahost.com/</authorUrl>
+    <version>1.0</version>
+    <description>Create a Bookmark QR Code for each single page in your Joomla site.</description>
+    <files>
+        <filename module="mod_qr_bookmark">mod_qr_bookmark.php</filename>
+		<filename>mod_qr_bookmark.xml</filename>
+        <filename>index.html</filename>
+        <filename>qrcode.class.php</filename>
+        <folder>Docs</folder>
+        <folder>Files</folder>
+        <filename>language/bg-BG/bg-BG.mod_qr_bookmark.ini</filename>
+        <filename>language/cs-CZ/cs-CZ.mod_qr_bookmark.ini</filename>
+        <filename>language/da-DK/da-DK.mod_qr_bookmark.ini</filename>
+        <filename>language/el-GR/el-GR.mod_qr_bookmark.ini</filename>
+        <filename>language/en-GB/en-GB.mod_qr_bookmark.ini</filename>
+        <filename>language/fr-FR/fr-FR.mod_qr_bookmark.ini</filename>
+        <filename>language/it-IT/it-IT.mod_qr_bookmark.ini</filename>
+    </files>
+    <config>
+    	<fields name="params">
+    		<fieldset name="advanced">
+				<field name="qr_bkmrk_width" type="text" default="250" label="MOD_QR_BOOKMARK_WIDTH" description="MOD_QR_BOOKMARK_WIDTH_DESC" />
+                <field name="qr_correction_level" type="list" default="L" label="MOD_QR_BOOKMARK_CORRECTION" description="MOD_QR_BOOKMARK_CORRECTION_DESC">
+                    <option value="L">L</option>
+                    <option value="M">M</option>
+                    <option value="Q">Q</option>
+                    <option value="H">H</option>
+                </field>
+			</fieldset>
+    	</fields>
+	</config>
+    <administration>
+        <languages folder="language">
+            <language tag="bg-BG">bg-BG/bg-BG.mod_qr_bookmark.ini</language>
+            <language tag="cs-CZ">cs-CZ/cs-CZ.mod_qr_bookmark.ini</language>
+            <language tag="da-DK">da-DK/da-DK.mod_qr_bookmark.ini</language>
+            <language tag="el-GR">el-GR/el-GR.mod_qr_bookmark.ini</language>
+            <language tag="en-GB">en-GB/en-GB.mod_qr_bookmark.ini</language>
+            <language tag="fr-FR">fr-FR/fr-FR.mod_qr_bookmark.ini</language>
+            <language tag="it-IT">it-IT/it-IT.mod_qr_bookmark.ini</language>
+            <language tag="zh-CN">zh-CN/zh-CN.mod_qr_bookmark.ini</language>
+        </languages>
+    </administration>
+</extension>
